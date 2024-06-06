@@ -3,9 +3,12 @@ Blog-page
 deployed link: https://keshavvibe.netlify.app/
 
 What I learned from this project:
-A. HTML Structure: learned how to structure a basic HTML document, including the <head>, <body>, and various elements within them.
 
-B. Semantic HTML: I used semantic HTML elements like <header>, <nav>, <article>, <section>, <footer>, and <fieldset> to structure my content logically and meaningfully.
+A. HTML Structure: learned how to structure a basic HTML document, including the head, body and various elements within them.
+
+
+B. Semantic HTML: I used semantic HTML elements like header, nav, article, section, footer, and fieldset to structure my content logically and meaningfully.
+
 
 C. Embedding Media: learned how to embed images and videos into HTML document using the <img> and <iframe> tags, respectively.
 
