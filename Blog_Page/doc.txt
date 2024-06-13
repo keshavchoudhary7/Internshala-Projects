@@ -1,0 +1,13 @@
+Dear sir/mam
+	I am submitting txt file along with assignment to add as a backup if html file misses anything by mistake. I have added this in my github repository
+as well. Also deployed on Netlify for preview purpose. Links of the following are added below for your reference.
+please kindly accept this as a backup.
+
+github link :https://github.com/keshavchoudhary7/Internshala-Projects
+preview : https://keshavvlog.netlify.app/
+
+
+sincerely
+Keshav Kumar Choudhary
+mob:7079547668
+email: keshavchoudhary782@gmail.com
