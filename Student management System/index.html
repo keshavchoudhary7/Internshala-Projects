@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A system for registering student details including name, ID, email, and contact.">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <h3 style="color: #333333;">We Welcome You to Register Yourself On our Student Registration Portal !</h3>
+        <p style="color: wheat;">
+             <marquee behavior="description" direction="rows">Register students and manage their details efficiently.</marquee> 
+        </p>
+    </header>
+    
+    <form id="studentForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required>
+        
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" name="emailId" required>
+        
+        <label for="contactNo">Contact No:</label>
+        <input type="number" id="contactNo" name="contactNo" required>
+        
+        <button type="submit">Register Student</button>
+    </form>
+
+    <section id="studentListSection">
+        <h2>Registered Students</h2>
+        <div class="table-container">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
