@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addBooks_Section {
+  max-width: 1300px;
+  margin: 2em 0;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 3em;
+  padding-top: 1.2em;
+  background-color: #121212;
+  color: #fff;
+}
+
+.exampleBar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3em;
+  padding-top: 1.5em;
+}
+
+.Form_Section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addBooks_Form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: .7em;
+}
+
+.divforBookTitle, .divforBookAuthor, .addBooks_submit {
+  width: 100%;
+}
+
+.addBooks_title_class, .addBooks_author_class {
+  width: 100%;
+}
+
+.addBooks_div1, .addBooks_div2 .addBooks_div2 {
+  width: 100%;
+  display: flex;
+  gap: .7em;
+}
+
+.divforFormat {
+  width: 100%;
+}
+
+.divforBookImage_URL, .divforBookTitle, .divforBookAuthor, .divforBookPage, .divfor_bookLang, .divforGenre, .divfor_bookDesc, .divforFormat, .divfor_bookDesc {
+  width: 100%;
+  position: relative;
+}
+
+.addBooks_image_class, .addBook_bookPage_class, .addBook_bookLang_class, .addBook_bookGenre_class, .addBook_bookFormat_class, .addBook_bookDesc_class {
+  width: 100%;
+}
+
+.addBooks_image_class, .addBooks_title_class, .addBooks_author_class, .addBook_bookPage_class, .addBook_bookLang_class, .addBook_bookGenre_class, .addBook_bookFormat_class, .addBooks_submit {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1em;
+  padding: .5em .6em;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 1px solid #333;
+  height: 2.7em;
+  background-color: #333;
+  color: #fff;
+}
+
+.addBooks_submit:hover {
+  color: #fff;
+  background-color: #555;
+  cursor: pointer;
+}
+
+.addBook_bookDesc_class {
+  font-family: "Parkinsans", sans-serif;
+  font-size: .9em;
+  padding: 1em .8em;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 1px solid #333;
+  height: 10em;
+  resize: none;
+  background-color: #222;
+  color: #fff;
+}
+
+.addBooks_image_label-focus, .addBooks_title_label-focus, .addBooks_author_label-focus, .addBooks_page_label-focus, .addBooks_lang_label-focus, .addBooks_format_label-notFocus, .addBooks_genre_label-focus {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1em;
+  position: absolute;
+  left: .66em;
+  top: 1.8em;
+  transition: 0.2s ease all;
+  color: #00FF00;
+}
+
+.addBooks_image_label-notFocus, .addBooks_title_label-notFocus, .addBooks_author_label-notFocus, .addBooks_page_label-notFocus, .addBooks_lang_label-notFocus, .addBooks_format_label-focus, .addBooks_genre_label-notFocus, .addBooks_desc_label-focus {
+  font-family: "Parkinsans", sans-serif;
+  font-size: .8em;
+  position: absolute;
+  left: .5em;
+  top: 7px;
+  transition: 0.2s ease-in-out all;
+  background-color: #121212;
+  padding: 0 6px;
+  color: #fff;
+}
+
+.bookDetails_Info {
+  padding: .5em 1em;
+  padding-left: 1em;
+  border-left: 3px solid #00FF00;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: all .2s;
+  background-color: #2e2e2e;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+}
+
+.book_Constraints_header {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.book_example_header {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  padding: .8em 1em;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.ex1 {
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.book_example_header:hover {
+  cursor: pointer;
+}
+
+.books_constraints {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Parkinsans", sans-serif;
+  font-size: .9em;
+}
+
+.exampleForBooks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  width: 100%;
+}
+
+.exampleForBook {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.exampleList-open {
+  word-wrap: break-word;
+  padding: .9em .5em;
+  font-family: "Parkinsans", sans-serif;
+  font-size: .8em;
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+  transition: all .2s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.exampleList-close {
+  display: none;
+  transition: all .2s;
+}
+
+.error_text {
+  color: red;
+  font-family: "Lato", sans-serif;
+  padding-left: .5em;
+  margin-top: 2px;
+  font-size: .8em;
+}
+
+@media (max-width: 770px) {
+  .addBooks_Section {
+    margin: 3em 0;
+    margin-inline: auto;
+    padding: .7em;
+    flex-direction: column-reverse;
+    width: 70%;
+  }
+
+  .Form_Section {
+    width: 100%;
+  }
+
+  .addBooks_Form {
+    gap: .4em;
+    width: 100%;
+  }
+
+  .exampleBar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .addBooks_Section {
+    margin: 1em 0;
+    margin-inline: auto;
+    padding: .7em;
+    flex-direction: column-reverse;
+    gap: 4em;
+    width: 100%;
+  }
+
+  .Form_Section {
+    width: 100%;
+  }
+
+  .addBooks_Form {
+    gap: .4em;
+    width: 100%;
+  }
+
+  .exampleBar {
+    width: 100%;
+  }
+
+  .addBooks_image_class, .addBooks_title_class, .addBooks_author_class, .addBook_bookPage_class, .addBook_bookLang_class, .addBook_bookGenre_class, .addBook_bookFormat_class {
+    font-size: .9em;
+    height: 3em;
+  }
+
+  .addBooks_image_label-focus, .addBooks_title_label-focus, .addBooks_author_label-focus, .addBooks_page_label-focus, .addBooks_lang_label-focus, .addBooks_format_label-notFocus, .addBooks_genre_label-focus {
+    font-size: .9em;
+  }
+
+  .bookDetails_Info {
+    font-size: 1em;
+  }
+
+  .books_constraints {
+    font-size: .8em;
+  }
+
+  .exampleList-open {
+    font-size: .7em;
+    padding: .8em 1em;
+  }
+
+  .error_text {
+    font-size: .7em;
+  }
+}

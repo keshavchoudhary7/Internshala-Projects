@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bdetails_section{
+  max-width: 1200px;
+  margin: 3em 0;
+  margin-inline: auto;
+  z-index: 0;
+}
+
+.backButton{
+  padding: .6em 1.3em;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  font-size: medium;
+  transition: all .1s;
+  margin-bottom: 2em;
+}
+
+.backButton:hover{
+  cursor: pointer;
+}
+
+/* Book details */
+.bdetails_info{
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3em;
+}
+
+.bdetails_img{
+  position: relative;
+}
+
+.bdetails_genre_child{
+  background-color: #BF00FF;
+  color: white;
+  padding: 2px 10px;
+  margin-right: 3px;
+  border-radius: 1000px;
+  text-decoration: none ;
+}
+
+.bdetails_genre_child:hover{
+  background-color: #70008F;
+}
+
+.bdetails_buttons{
+  width: 65px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 0;
+}
+
+.heart_bdetails{
+  color: white;
+}
+
+.heart_clicked_bdetails{
+  color: red;
+}
+
+.heart_clicked_bdetails, .heart_bdetails{
+  font-size: 2.4em;
+}
+
+.heart_clicked_bdetails:hover, .heart_bdetails:hover{
+  cursor: pointer;
+}
+
+.bdetails_img img{
+  width: 378px;
+  height: 520px;
+}
+
+.bdetails_written{
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+}
+
+.bdetails_impo{
+  margin-bottom: 1.7em;
+}
+
+.bdetails_title{
+  font-family: "Playfair Display", serif;
+  margin-bottom: .1em;
+}
+
+.bdetails_author{
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+.bdetails_rating, .bdetails_summary, .bdetails_pages, .bdetails_Language, .bdetails_format, .bdetails_genres{
+  font-family: "Parkinsans", sans-serif;
+}
+
+@media (max-width: 770px){
+  .bdetails_section{
+    margin: 3em 0;
+    padding: .7em;
+  }
+
+  .bdetails_info{
+    width: 100%;
+    gap: 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .bdetails_section{
+    margin: 1em 0;
+    padding: .7em;
+  }
+
+  .bdetails_info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bdetails_img img{
+    width: 337px;
+    height: 468px;
+  }
+  
+  .bdetails_title{
+    font-size: 1.6em;
+  }
+
+  .bdetails_author{
+    font-size: 1.1em;
+  }
+
+  .bdetails_written{
+    align-self: flex-start;
+  }
+}

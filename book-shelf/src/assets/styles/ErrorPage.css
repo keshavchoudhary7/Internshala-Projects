@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ErrorPage {
+  background-color: #1f1f1f; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ErrorContent {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #333, #555);
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+}
+
+.errorCode {
+  font-family: 'Arial', sans-serif;
+  font-size: 120px;
+  font-weight: bold;
+  color: #ff0058; 
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px #fffa00; 
+  animation: flashEffect 1.5s infinite alternate; 
+}
+
+@keyframes flashEffect {
+  0% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px #fffa00;
+  }
+  50% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 0 0 20px #fffa00, 0 0 30px #fffa00;
+  }
+  100% {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px #fffa00;
+  }
+}
+
+.errorMessage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.backHome {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+}
+
+.backHomeLink {
+  color: #ff0058;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #ff0058;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.backHomeLink:hover {
+  background-color: #ff0058;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 770px) {
+  .errorCode {
+    font-size: 100px;
+  }
+  .errorMessage {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 540px) {
+  .errorCode {
+    font-size: 80px;
+  }
+  .errorMessage {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .errorCode {
+    font-size: 70px;
+  }
+  .errorMessage {
+    font-size: 0.9em;
+  }
+}

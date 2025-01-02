@@ -1,0 +1,110 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em 2.1em;
+  background-color: #1f1f1f; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  border-bottom: 2px solid #ffcc00; 
+}
+
+.companName {
+  font-size: 2em;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Bebas Neue", serif;
+  letter-spacing: .7px;
+  color: #ffffff; 
+  text-shadow: 0 0 10px #ffcc00; 
+}
+
+.navLink {
+  display: flex;
+  gap: 1.5em;
+}
+
+.navLink a {
+  font-family: "Parkinsans", sans-serif;
+  text-decoration: none;
+  color: #bbbbbb; 
+  font-size: 1.1em;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLink a:hover {
+  color: #ffcc00; 
+  text-shadow: 0 0 8px #ffcc00; 
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.9em;
+  cursor: pointer;
+  color: #ffffff; 
+  background-color: #1f1f1f;
+  border: none;
+  outline: none;
+}
+
+.burgerIcon {
+  display: none;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+@media (max-width: 590px) {
+  .navLink {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f1f; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 170px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 50;
+  }
+
+  .burgerIcon {
+    display: block;
+  }
+
+  .navLink.open {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 8px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    padding: 1em;
+  }
+
+  .companName {
+    font-size: 1.6em;
+  }
+
+  .menu-icon {
+    font-size: 1.5em;
+  }
+
+  .navLink a {
+    font-size: 0.9em;
+  }
+}

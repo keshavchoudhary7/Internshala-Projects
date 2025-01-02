@@ -1,0 +1,58 @@
+.Browsebcard{
+  width: 200px;
+  height: 440px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.BrowsebcardHighlighted{
+  width: 200px;
+  height: 440px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  animation: lumin 2s ease-in-out 4 alternate;
+}
+
+@keyframes lumin {
+  0%, 100% {
+    box-shadow: 
+      0 0 10px rgba(255, 20, 147, 0.6),
+      0 0 20px rgba(255, 20, 147, 0.4),
+      0 0 30px rgba(255, 20, 147, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 20px rgba(255, 20, 147, 0.8),
+      0 0 30px rgba(255, 20, 147, 0.6),
+      0 0 40px rgba(255, 20, 147, 0.4);
+  }
+}
+
+.Browse_book_img img{
+  width: 200px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+
+.Browse_book_img{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 760px){
+
+  .Browsebcard{
+    width: 160px;
+    height: 352px;
+  }
+
+  .BrowsebcardHighlighted{
+    width: 160px;
+    height: 352px;
+  }
+  
+  .Browse_book_img img{
+    width: 160px;
+    height: 190px;
+  }
+}

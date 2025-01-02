@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Wishlist Section Styling */
+.wishlistSection {
+  max-width: 1300px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+.wishlistDetails {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.wishlistHead {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00FF00; 
+  margin-bottom: 0.5em;
+}
+
+.wishlistbooks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+}
+
+.noWish {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2em;
+  color: #888888;
+  line-height: 1.6;
+}
+
+.noWish span {
+  color: #00FF00; 
+}
+
+.Bcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Bcard:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 255, 0, 0.3) 0px 6px 15px;
+}
+
+.Bcard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.Bcard .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.Bcard .author {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 1em;
+}
+
+.Bcard .rating {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00FF00; 
+  margin-bottom: 1em;
+}
+
+.Bcard .desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #bbbbbb;
+  margin-bottom: 1.5em;
+}
+
+.Bcard .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Bcard button {
+  padding: 0.6em 1em;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00FF00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Bcard button:hover {
+  background-color: #00cc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wishlistHead {
+    font-size: 2rem;
+  }
+
+  .Bcard {
+    padding: 1em;
+  }
+
+  .Bcard .title {
+    font-size: 1.1rem;
+  }
+
+  .Bcard .author, .Bcard .rating, .Bcard .desc {
+    font-size: 0.85rem;
+  }
+}

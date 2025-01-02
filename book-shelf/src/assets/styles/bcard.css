@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bcard {
+  width: 200px;
+  height: 495px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px, 0px 0px 10px 3px rgba(255, 255, 0, 0.75); /* Yellow glowing border */
+  transition: box-shadow 0.3s ease;  
+}
+
+.bcard:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px, 0px 0px 15px 5px rgba(255, 255, 0, 1); /* Glowing effect on hover */
+}
+
+.book_img img {
+  width: 200px;
+  height: 250px;
+}
+
+.book_img {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.book_details {
+  padding-inline: 5px;
+  color: white; 
+}
+
+.books_buttons {
+  display: flex;
+  flex-direction: column;
+  width: 55px;
+  height: 80px;
+  border-radius: 0 0 0 28px;
+  padding: 18px;
+  justify-content: center;
+  gap: 9px;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.bcard:hover .books_buttons {
+  opacity: 1;
+}
+
+.Browsebcard:hover .books_buttons {
+  opacity: 1;
+}
+
+.BrowsebcardHighlighted:hover .books_buttons {
+  opacity: 1;
+}
+
+.squareArrow {
+  font-size: 1.3em;
+  color: rgb(255, 255, 255);
+}
+
+.heart, .heart_clicked {
+  font-size: 1.4em;
+  color: rgb(255, 255, 255);
+}
+
+.heart:hover, .heart_clicked:hover {
+  cursor: pointer;
+}
+
+.squareArr {
+  color: #fff;
+}
+
+.heart_clicked {
+  color: #FF0000;
+}
+
+.book_title, .book_author, .book_rating, .book_language, .book_page {
+  margin-bottom: 7px;
+  color: white; 
+}
+
+.book_title, .book_author {
+  font-size: 1.1em;
+  font-family: "Playfair Display", serif;
+}
+
+.book_rating, .book_language, .book_page {
+  font-family: "Parkinsans", serif;
+  font-size: .9em;
+}
+
+.book_desc {
+  font-family: "Parkinsans", serif;
+  font-size: .8em;
+}
+
+.book_details {
+  text-overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .bcard {
+    width: 190px;
+    height: 450px;
+  }
+  .book_img img {
+    width: 190px;
+    height: 230px;
+  }
+  .book_title, .book_author {
+    font-size: .9em;
+  }
+
+  .book_rating, .book_language, .book_page {
+    font-size: .8em;
+  }
+
+  .book_desc {
+    font-size: .8em;
+  }
+  
+  .squareArrow {
+    font-size: 1.2em;
+  }
+  
+  .heart, .heart_clicked {
+    font-size: 1.3em; 
+  }
+}
